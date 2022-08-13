@@ -1,0 +1,29 @@
+.main-container {
+    padding-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-size: 64px;
+        color: white;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 100%;
+        border: 2px solid rgba(128, 124, 124, 0.29);
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        object-position: 0px -40px;
+    }
+    button {
+        font-size: 36px;
+        padding: 16px 48px 16px 48px;
+        background-color: transparent;
+        border: 5px solid green;
+        color: green;
+    }
+}
