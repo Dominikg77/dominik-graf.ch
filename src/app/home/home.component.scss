@@ -25,5 +25,16 @@
         background-color: transparent;
         border: 5px solid green;
         color: green;
+        border-radius: 10px;
+        &:hover {
+            transition: all 255ms ease-in-out;
+            background-color: rgba(0, 128, 0, 0.3);
+        }
     }
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
 }

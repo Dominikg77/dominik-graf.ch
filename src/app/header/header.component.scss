@@ -3,6 +3,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    h1 {
+        color: white;
+    }
     img {
         width: 60px;
         height: 60px;
@@ -12,6 +15,8 @@ header {
         text-decoration: none;
         color: white;
         margin-left: 32px;
+        font-size: 24px;
+        font-weight: 600;
         &:hover {
             transition: 225ms ease-in-out;
             color: rgba(255, 255, 255, 0.6);
