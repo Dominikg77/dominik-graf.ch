@@ -1,0 +1,46 @@
+$color-red:rgb(128, 0, 0);
+.container-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-work {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin-left: 36px;
+    button {
+        font-size: 22px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid $color-red;
+        padding: 16px 32px 16px 32px;
+        margin: 5px;
+        &:active {
+            background-color: rgba(128, 0, 0, 0.8);
+        }
+        &:hover {
+            background-color: rgba(128, 0, 0, 0.8);
+        }
+    }
+}
+
+.container-projects {
+    display: flex;
+    margin-top: 50px;
+    img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+}
+
+.work-info-container {
+    background-color: white;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+}

@@ -1,3 +1,4 @@
+$color-red:rgb(128, 0, 0);
 header {
     padding-top: 32px;
     display: flex;
@@ -19,7 +20,7 @@ header {
         font-weight: 600;
         &:hover {
             transition: 225ms ease-in-out;
-            color: rgba(255, 255, 255, 0.6);
+            color: $color-red;
             -webkit-transition: 225ms ease-in-out;
             -moz-transition: 225ms ease-in-out;
             -ms-transition: 225ms ease-in-out;

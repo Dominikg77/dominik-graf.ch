@@ -1,3 +1,5 @@
+$color-red:rgb(128, 0, 0);
+$color-green:rgb(0, 255, 182);
 .main-container {
     padding-top: 160px;
     display: flex;
@@ -6,6 +8,13 @@
     p {
         font-size: 64px;
         color: white;
+    }
+    strong {
+        color: $color-red;
+    }
+    span {
+        margin-left: -16px;
+        color: $color-green;
     }
     img {
         width: 400px;
@@ -23,12 +32,12 @@
         font-size: 36px;
         padding: 16px 48px 16px 48px;
         background-color: transparent;
-        border: 5px solid green;
-        color: green;
+        border: 5px solid $color-green;
+        color: $color-green;
         border-radius: 10px;
         &:hover {
             transition: all 255ms ease-in-out;
-            background-color: rgba(0, 128, 0, 0.3);
+            background-color: rgb(0, 255, 182, 0.15);
         }
     }
 }
