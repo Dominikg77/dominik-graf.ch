@@ -1,0 +1,35 @@
+$color-red:rgb(128, 0, 0);
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.data-container {
+    h1,
+    h2 {
+        color: $color-red;
+    }
+}
+
+@media(max-width:875px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+    .data-container {
+        padding-right: 0;
+        padding-top: 100px;
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+}

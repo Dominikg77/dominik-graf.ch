@@ -1,15 +1,21 @@
 .container-skills {
-    height: 98vh;
+    height: 97vh;
     width: 100vw;
     max-width: 100%;
     background-color: rgba(56, 56, 56, 0.4);
     margin-top: 60px;
     padding-top: 5px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.headline {
+    margin-top: 8px;
+    margin-bottom: -20px;
     h2 {
-        margin-bottom: -40px;
+        color: white;
     }
 }
 
