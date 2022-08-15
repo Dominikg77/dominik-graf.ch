@@ -1,1 +1,58 @@
-<p>contact-me works!</p>
+<div class="contact">
+    <div class="contact-heading">
+        <h4> Contact me.</h4>
+        <p>Get in touch via the from below, or emailing <a class="link-animation" href=" mailto:dominik.graf2001@gmail.com">dominik.graf2001@gmail.com </a></p>
+        <div class="contact-form">
+            <form method="post">
+                <div class="inputarea">
+
+                    <div>
+                        <label for="name ">Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="name" required placeholder="Enter your Name">
+                    </div>
+                    <!--
+                    <div style="color: rgb(185, 1, 1);">
+                        Your Name is required
+                    </div>
+                    -->
+                </div>
+
+                <div class="inputarea">
+                    <div>
+                        <label for="email">Email Adress</label>
+                    </div>
+                    <div>
+                        <input required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="Enter your Email adress">
+                    </div>
+                    <!--
+                    <div style="color: rgb(208, 6, 6);">
+                        Your valid Email is required
+                    </div>
+                    -->
+                </div>
+
+
+                <div class="inputarea">
+                    <div>
+                        <label for="message">Message</label>
+                    </div>
+                    <div>
+                        <textarea required name="message" placeholder="Write your message"></textarea>
+
+                    </div>
+                    <!--
+                    <div style="color: rgb(208, 6, 6);">
+                        Please write something
+                    </div>
+                    -->
+                </div>
+                <div class="btn">
+                    <button class="btn-class" type="submit">Send</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
