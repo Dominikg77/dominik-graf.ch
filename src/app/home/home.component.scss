@@ -1,13 +1,15 @@
 $color-red:rgb(128, 0, 0);
 $color-green:rgb(0, 255, 182);
 .main-container {
-    padding-top: 160px;
+    margin-top: -100px;
+    height: calc(100vh - 150px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    p {
-        font-size: 64px;
+    h1 {
         color: white;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
     strong {
         color: $color-red;
@@ -27,6 +29,7 @@ $color-green:rgb(0, 255, 182);
         -ms-border-radius: 100%;
         -o-border-radius: 100%;
         object-position: 0px -40px;
+        box-shadow: 0 0 5px 3x rgba(170, 170, 170, 0.451);
     }
     button {
         font-size: 18px;
@@ -35,9 +38,11 @@ $color-green:rgb(0, 255, 182);
         border: 2px solid $color-green;
         color: $color-green;
         border-radius: 10px;
+        transition: all 255ms ease-in-out;
         &:hover {
             transition: all 255ms ease-in-out;
-            background-color: rgb(0, 255, 182, 0.15);
+            transform: translateY(-10px) translateX(-10px);
+            box-shadow: 9px 9px 4px 0px;
         }
     }
 }
@@ -45,54 +50,55 @@ $color-green:rgb(0, 255, 182);
 .arrow-down {
     display: flex;
     justify-content: center;
-    padding-top: 200px;
 }
 
-@media(max-width:1450px) {
+@media(max-width:1500px) {
     .main-container {
-        padding-top: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        p {
-            font-size: 48px;
-            color: white;
-        }
-        strong {
-            color: $color-red;
-        }
         span {
-            margin-left: -16px;
+            padding-left: 3px;
+        }
+        img {
+            width: 350px;
+            height: 350px;
+        }
+        button {
+            padding: 24px 80px 24px 80px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media(max-width:1250px) {
+    .main-container {
+        span {
+            padding-left: 8px;
             color: $color-green;
         }
         img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 100%;
-            border: 2px solid rgba(128, 124, 124, 0.29);
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            -ms-border-radius: 100%;
-            -o-border-radius: 100%;
-            object-position: 0px -40px;
+            width: 280px;
+            height: 280px;
         }
         button {
-            font-size: 36px;
-            padding: 16px 48px 16px 48px;
-            background-color: transparent;
-            border: 5px solid $color-green;
-            color: $color-green;
+            padding: 18px 60px 18px 60px;
             border-radius: 10px;
-            &:hover {
-                transition: all 255ms ease-in-out;
-                background-color: rgb(0, 255, 182, 0.15);
-            }
         }
     }
     .arrow-down {
-        display: flex;
+        padding-top: 00px;
+    }
+    img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media(max-width:1075px) {
+    .main-container {
+        flex-direction: column-reverse;
         justify-content: center;
-        padding-top: 250px;
+        text-align: center;
+        img {
+            margin-bottom: 16px;
+        }
     }
 }

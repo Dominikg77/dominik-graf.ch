@@ -1,5 +1,5 @@
 .container-skills {
-    height: 97vh;
+    height: 100%;
     width: 100vw;
     max-width: 100%;
     background-color: rgba(56, 56, 56, 0.4);
@@ -21,7 +21,7 @@
 
 .skill-container {
     margin-top: 36px;
-    width: 1000px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     p {
@@ -50,7 +50,17 @@
     position: relative;
     left: 60px;
     box-shadow: 0 0 6px 2px grey;
+    &:hover {
+        box-shadow: 0 0 6px 3px grey;
+    }
     img {
         height: 30px;
+    }
+}
+
+@media(max-width:850px) {
+    .skill-container {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }

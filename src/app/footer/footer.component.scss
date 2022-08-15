@@ -36,7 +36,8 @@
         width: 50px;
         height: 50px;
         object-fit: cover;
-        margin-left: 36px;
+        margin-left: 18px;
+        margin-right: 18px;
     }
 }
 
@@ -44,5 +45,17 @@
     img {
         width: 30px;
         height: 30px;
+    }
+}
+
+@media(max-width:1075px) {
+    .margin {
+        flex-direction: column-reverse;
+    }
+    .footer-link {
+        margin-top: 12px;
+    }
+    .footer-img {
+        margin-bottom: 12px;
     }
 }
