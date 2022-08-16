@@ -44,6 +44,20 @@ $color-green:rgb(0, 255, 182);
 .arrow-down {
     display: flex;
     justify-content: center;
+    img {
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+        padding: 15px;
+        cursor: pointer;
+        transition: all 105ms ease-in-out;
+        z-index: 2;
+        &:hover {
+            box-shadow: 0px 0px 14px 0px white;
+            transition: all 105ms ease-in-out;
+            transform: translateY(10px);
+        }
+    }
 }
 
 @media(max-width:1500px) {
@@ -81,8 +95,16 @@ $color-green:rgb(0, 255, 182);
         padding-top: 00px;
     }
     img {
-        width: 48px;
-        height: 48px;
+        height: 35px;
+        width: 35px;
+        border-radius: 100%;
+        padding: 15px;
+        cursor: pointer;
+        transition: all 105ms ease-in-out;
+        z-index: 2;
+        &:hover {
+            margin-bottom: 50px;
+        }
     }
 }
 

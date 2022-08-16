@@ -3,20 +3,20 @@
 </div>
 <div class="myWork-container">
     <div>
-        <button>All</button>
+        <button [class.activated]="all" (click)="allProjects()">All</button>
     </div>
     <div>
-        <button>Angular</button>
+        <button [class.activated]="angProjects" (click)="angularProjects()">Angular</button>
 
     </div>
     <div>
-        <button>Javascript</button>
+        <button [class.activated]="jsProjects" (click)="javaProjects()">Javascript</button>
     </div>
 </div>
 <div class="project-container">
-    <div class="projects ">
+    <div class="projects">
 
-        <div class="project-images">
+        <div class="project-images" *ngIf="java">
             <img src="assets/img/pokedex.png">
 
             <div class="project-details">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-images">
+        <div class="project-images" *ngIf="java">
             <img src="assets/img/elpolloloco.png">
             <div class="project-details">
                 <div><span class="f-size-22"><h3>El POLLO LOCO</h3> </span></div>
@@ -41,13 +41,13 @@
 
             </div>
         </div>
-        <div class="project-images">
+        <div class="project-images" *ngIf="java">
             <img src="assets/img/join.png">
             <div class="project-details">
                 <div><span class="f-size-22"><h3>JOIN</h3></span></div>
                 <p>Tasks management system based on Eisenhower s urgent-important-principle.</p>
                 <div class="btn-container">
-                    <a class="link-btn" href="https://navjot-singh.developerakademie.net/Join-Project-Managment/index.html" target="_blank">Try it out</a>
+                    <a class="link-btn" href="#" target="_blank">Try it out</a>
                     <a class="link-btn" href="https://github.com/Dominikg77/Join" target="_blank">GitHub</a>
                 </div>
             </div>
@@ -55,36 +55,36 @@
     </div>
 
     <div class="projects ">
-        <div class="project-images">
-            <img src="assets/img/ringoffire.png">
+        <div class="project-images" *ngIf="java">
+            <img src="assets/img/lieferando.png">
             <div class="project-details">
-                <div><span class="f-size-22"><h3>Ring of Fire</h3></span></div>
-                <p>Angular-based web-app of the popular drinking game.</p>
+                <div><span class="f-size-22"><h3>Eat-Just</h3></span></div>
+                <p>My first big project with javascript.</p>
                 <div class="btn-container">
-                    <a class="link-btn" href="#" target="_blank">Try it out</a>
-                    <a class="link-btn" href="https://github.com/navjotsingh96/RingOfFire" target="_blank">GitHub</a>
+                    <a class="link-btn" target="_blank" href="#">Try it out</a>
+                    <a class="link-btn" target="_blank" href="https://github.com/Dominikg77/Eat-Just">GitHub</a>
                 </div>
             </div>
         </div>
-        <div class="project-images">
+        <div class="project-images" *ngIf="angular">
             <img src="assets/img/my-webseite.png">
             <div class="project-details">
                 <div><span class="f-size-22"><h3>Portfolio</h3></span></div>
                 <p>Angular-based Webpage.</p>
                 <div class="btn-container">
                     <a class="link-btn" href="#top">Go to Top</a>
-                    <a class="link-btn" target="_blank" href="https://github.com/navjotsingh96/navjot-singh">GitHub</a>
+                    <a class="link-btn" target="_blank" href="https://github.com/Dominikg77/portfolio">GitHub</a>
                 </div>
             </div>
         </div>
-        <div class="project-images">
-            <img src="assets/img/lieferando.png">
+        <div class="project-images" *ngIf="angular">
+            <img src="assets/img/ringoffire.png">
             <div class="project-details">
-                <div><span class="f-size-22"><h3>Just-Eat</h3></span></div>
-                <p>My first big project with javascript.</p>
+                <div><span class="f-size-22"><h3>Ring of Fire</h3></span></div>
+                <p>Angular-based web-app of the popular drinking game.</p>
                 <div class="btn-container">
-                    <a class="link-btn" target="_blank" href="#">Try it out</a>
-                    <a class="link-btn" target="_blank" href="https://github.com/Dominikg77/Just-Eat">GitHub</a>
+                    <a class="link-btn" href="#" target="_blank">Try it out</a>
+                    <a class="link-btn" href="#" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
