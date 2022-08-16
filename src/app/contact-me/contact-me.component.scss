@@ -11,7 +11,6 @@ $color-green:rgb(0, 255, 182);
     width: 60%;
     padding-left: 350px;
     h4 {
-        font-size: 48px;
         margin: 0;
         color: $color-green;
     }
@@ -103,7 +102,6 @@ $color-green:rgb(0, 255, 182);
     background-color: black;
     color: #7AF8D9;
     border: 3px solid $color-green;
-    font-size: 15px;
     font-weight: 500;
     transition: all 225ms ease;
     border-radius: 10px;
@@ -141,15 +139,12 @@ $color-green:rgb(0, 255, 182);
     .contact {
         padding-top: 30px;
         padding-bottom: 40px;
-        padding-right: 25px;
-        padding-left: 25px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .contact-heading {
         padding-left: 100px;
         width: 100%;
-        h1 {
-            font-size: 36px;
-        }
     }
     p {
         margin-right: 35px;
@@ -167,5 +162,29 @@ $color-green:rgb(0, 255, 182);
 @media (max-width:700px) {
     .contact-heading {
         padding-left: 0;
+        margin-left: 50px;
+    }
+    .btn {
+        justify-content: center;
+    }
+    .btn-class {
+        width: 80%;
+        height: 50px;
+    }
+    .inputarea {
+        width: 100%;
+        textarea {
+            height: 120px;
+            font-size: 16px;
+        }
+        label {
+            margin-top: -24px;
+            margin-bottom: -24px;
+            font-size: 16px;
+        }
+        input {
+            height: 40px;
+            font-size: 16px;
+        }
     }
 }

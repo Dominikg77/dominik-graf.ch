@@ -5,7 +5,7 @@ $color-green:rgb(0, 255, 182);
     max-width: 100%;
     padding-top: 64px;
     padding-bottom: 48px;
-    background-color: rgba(56, 56, 56, 0.4);
+    background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
 }
@@ -34,13 +34,11 @@ $color-green:rgb(0, 255, 182);
     text-align: center;
     p {
         color: white;
-        font-size: 18px;
         text-align: center;
         margin-block-start: 0em;
         margin-block-end: 0em;
     }
     a {
-        font-size: 18px;
         text-decoration: none;
         border-bottom: 2px solid transparent;
         color: white;
@@ -62,12 +60,10 @@ $color-green:rgb(0, 255, 182);
     justify-content: space-between;
     h3 {
         color: white;
-        font-size: 24px;
     }
     p {
         width: 95%;
         color: white;
-        font-size: 16px;
         line-height: 160%;
     }
 }
@@ -92,8 +88,8 @@ $color-green:rgb(0, 255, 182);
     .container-header {
         flex-direction: column;
         img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
         }
     }
     .detail-info-container {
@@ -110,9 +106,12 @@ $color-green:rgb(0, 255, 182);
 }
 
 @media(max-width:900px) {
+    .container {
+        padding-top: 40px;
+    }
     .margin {
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
     .headline-text {
         width: 80vw;
@@ -125,6 +124,6 @@ $color-green:rgb(0, 255, 182);
     }
     .container-header {
         border-bottom: 2px solid transparent;
-        padding-bottom: 24px;
+        padding-bottom: 12px;
     }
 }

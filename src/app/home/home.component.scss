@@ -1,7 +1,7 @@
 $color-red:rgb(128, 0, 0);
 $color-green:rgb(0, 255, 182);
 .main-container {
-    margin-top: -100px;
+    margin-top: -50px;
     height: calc(100vh - 150px);
     display: flex;
     align-items: center;
@@ -24,15 +24,9 @@ $color-green:rgb(0, 255, 182);
         object-fit: cover;
         border-radius: 100%;
         border: 2px solid rgba(128, 124, 124, 0.29);
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        object-position: 0px -40px;
-        box-shadow: 0 0 5px 3x rgba(170, 170, 170, 0.451);
     }
     button {
-        font-size: 18px;
+        margin-top: 24px;
         padding: 24px 100px 24px 100px;
         background-color: transparent;
         border: 2px solid $color-green;
@@ -79,7 +73,7 @@ $color-green:rgb(0, 255, 182);
             height: 280px;
         }
         button {
-            padding: 18px 60px 18px 60px;
+            padding: 18px 80px 18px 80px;
             border-radius: 10px;
         }
     }
@@ -100,11 +94,48 @@ $color-green:rgb(0, 255, 182);
         img {
             margin-bottom: 16px;
         }
+        button {
+            padding: 18px 120px 18px 120px;
+            border-radius: 10px;
+        }
     }
 }
 
 @media(max-width:875px) {
     .main-container {
         margin-top: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+}
+
+@media(max-width:600px) {
+    .main-container {
+        padding-top: 100px;
+        margin-left: 24px;
+        margin-right: 24px;
+        span {
+            padding-left: 9.5px;
+            color: $color-green;
+        }
+        img {
+            width: 240px;
+            height: 240px;
+        }
+        button {
+            padding: 18px 120px 18px 120px;
+            border-radius: 10px;
+        }
+    }
+    .arrow-down {
+        padding-top: 00px;
+    }
+    img {
+        width: 48px;
+        height: 48px;
+    }
+    .arrow-down {
+        display: none;
     }
 }

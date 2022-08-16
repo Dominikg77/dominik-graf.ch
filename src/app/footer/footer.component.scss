@@ -63,3 +63,23 @@
         margin-right: 0px;
     }
 }
+
+@media(max-width:800px) {
+    .margin {
+        flex-direction: column-reverse;
+    }
+    .footer-container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .footer-link {
+        margin-top: 12px;
+    }
+    .footer-img {
+        margin-bottom: 12px;
+    }
+    .margin {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
