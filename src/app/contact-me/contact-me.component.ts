@@ -1,39 +1,65 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
+
+
 export class ContactMeComponent implements OnInit {
-  isSubmitted = false;
+  contact = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
+  post = {
+    // Where to send the post request Ex. http://my-domain/sendMail.php
+    //or https://my-domain/sendMail.php if you have SSL-Certificate Active
+    endPoint: 'https://dominik-graf.developerakademie.net/portfolio/mail.php',
 
 
-  public email: FormGroup = new FormGroup({
-    name: new FormControl('', [
-      Validators.required
-    ], []),
-    email: new FormControl('', [
-      Validators.required
-    ], []),
-    message: new FormControl('', [
-      Validators.required
-    ], []),
+    body: (payload: any) => JSON.stringify(payload),
+    // How to send, notice Content-Type and responseType
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
 
-  });
+ 
 
-
-
-  constructor() { }
+  constructor(private http: HttpClient, private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
-  onSubmit() {
+  submitForm(ngForm: any) {
+    if (ngForm.submitted && ngForm.form.valid) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contact))
+        .subscribe({
+          next: (response) => console.log(response),
+          error: (error) => this.errorSnackBar(),
+          complete: () => this.sentSnackBar(),
+        });
+      ngForm.reset();
 
+    }
+  }
+  sentSnackBar() {
+    this._snackBar.open('Email sent', 'Close');
     setTimeout(() => {
-      this.isSubmitted = true;
-    }, 3000);
-    
-}
+      this._snackBar.dismiss();
+    }, 5000);
+  }
+  errorSnackBar() {
+    this._snackBar.open('Email could not be sent. Please contact me direct on hello@navjot-singh.de', 'Close');
+
+  }
 }
