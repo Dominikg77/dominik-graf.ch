@@ -5,6 +5,9 @@ $color-green:rgb(0, 255, 182);
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
+    span {
+        color: white;
+    }
 }
 
 .contact-heading {
