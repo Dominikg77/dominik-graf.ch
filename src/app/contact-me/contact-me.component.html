@@ -3,14 +3,15 @@
         <h4> Contact me.</h4>
         <p>Get in touch via the from below, or emailing <a class="link-animation" href=" mailto:dominik.graf2001@gmail.com">dominik.graf2001@gmail.com </a></p>
         <div class="contact-form">
-            <form method="post">
+            <form #form action="https://dominik-graf.developerakademie.net/portfolio/mail.php" method="post" (ngSubmit)="onSubmit()">
+                <!--[FormGroup]="email"-->
                 <div class="inputarea">
 
                     <div>
                         <label for="name ">Name</label>
                     </div>
                     <div>
-                        <input type="text" name="name" required placeholder="Enter your Name">
+                        <input formControlName="name" type="text" name="name" required placeholder="Enter your Name">
                     </div>
                     <!--
                     <div style="color: rgb(185, 1, 1);">
@@ -24,7 +25,7 @@
                         <label for="email">Email Adress</label>
                     </div>
                     <div>
-                        <input required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="Enter your Email adress">
+                        <input formControlName="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="Enter your Email adress">
                     </div>
                     <!--
                     <div style="color: rgb(208, 6, 6);">
@@ -39,7 +40,7 @@
                         <label for="message">Message</label>
                     </div>
                     <div>
-                        <textarea required name="message" placeholder="Write your message"></textarea>
+                        <textarea formControlName="message" name="message" required placeholder="Write your message"></textarea>
 
                     </div>
                     <!--
@@ -49,8 +50,9 @@
                     -->
                 </div>
                 <div class="btn">
-                    <button class="btn-class" type="submit">Send</button>
+                    <button class="btn-class" [disabled]="!email.valid" type="submit" value='submit' (click)="form.submit()">Send</button>
                 </div>
+                <span class="email-send" *ngIf="isSubmitted">Your E-mail was send!</span>
             </form>
 
         </div>
