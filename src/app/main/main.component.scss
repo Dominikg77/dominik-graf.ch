@@ -2,3 +2,10 @@
     padding-left: 160px;
     padding-right: 160px;
 }
+
+@media (max-width: 900px) {
+    .main-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

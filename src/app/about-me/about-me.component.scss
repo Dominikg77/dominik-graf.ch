@@ -11,8 +11,8 @@ $color-green:rgb(0, 255, 182);
 }
 
 .margin {
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 .container-header {
@@ -103,5 +103,28 @@ $color-green:rgb(0, 255, 182);
     .main-info-container {
         flex-direction: column;
         margin-top: 12px;
+    }
+    .container-header {
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width:900px) {
+    .margin {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .headline-text {
+        width: 80vw;
+    }
+    .detail-info-container {
+        width: 80vw;
+    }
+    .main-info-container {
+        align-items: center;
+    }
+    .container-header {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 24px;
     }
 }
