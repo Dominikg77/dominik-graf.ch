@@ -17,13 +17,19 @@ header {
 
 .links {
     a {
+        box-shadow: inset 0 0 0 0 grey;
         color: white;
+        padding: 2px;
+        border-radius: 5px;
         margin-left: 50px;
         text-decoration: none;
         border-bottom: 3px solid transparent;
-        transition: all 225ms ease;
+        transition: color 225ms ease-in-out, box-shadow 400ms ease-in-out, ;
         &:hover {
-            color: #E6405D;
+            color: $color-red;
+            box-shadow: inset 200px 0 0 0 white;
+            border-radius: 5px;
+            padding: 2px;
         }
     }
 }

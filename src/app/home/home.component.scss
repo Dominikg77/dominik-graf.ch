@@ -40,22 +40,46 @@ $color-green:rgb(0, 255, 182);
     }
 }
 
-.arrow-down {
+.arrow-container {
     display: flex;
     justify-content: center;
-    img {
-        height: 35px;
-        width: 35px;
-        border-radius: 100%;
-        padding: 15px;
-        cursor: pointer;
-        transition: all 105ms ease-in-out;
-        z-index: 2;
-        &:hover {
-            box-shadow: 0px 0px 14px 0px white;
-            transition: all 105ms ease-in-out;
-            transform: translateY(10px);
+    align-items: center;
+    .arrow {
+        justify-content: center;
+        transform: translate(-50%, -50%);
+        span {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-bottom: 5px solid $color-green;
+            border-right: 5px solid $color-green;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: animate 3s 3;
         }
+        span:nth-child(2) {
+            animation-delay: -0.2s;
+        }
+        span:nth-child(3) {
+            animation-delay: -0.4s;
+        }
+    }
+}
+
+
+/*Animation*/
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
     }
 }
 
@@ -90,9 +114,6 @@ $color-green:rgb(0, 255, 182);
             border-radius: 10px;
         }
     }
-    .arrow-down {
-        padding-top: 00px;
-    }
     img {
         height: 35px;
         width: 35px;
@@ -126,8 +147,11 @@ $color-green:rgb(0, 255, 182);
     .main-container {
         margin-top: 0px;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 70px;
         text-align: start;
+    }
+    .arrow-container {
+        display: none;
     }
 }
 
@@ -149,14 +173,8 @@ $color-green:rgb(0, 255, 182);
             border-radius: 10px;
         }
     }
-    .arrow-down {
-        padding-top: 00px;
-    }
     img {
         width: 48px;
         height: 48px;
-    }
-    .arrow-down {
-        display: none;
     }
 }
