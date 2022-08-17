@@ -1,23 +1,23 @@
 <div class="contact" id="contact">
     <div class="contact-heading">
-        <h4> Contact me.</h4>
-        <p>Get in touch via the from below, or emailing <a class="link-animation" href=" mailto:dominik.graf2001@gmail.com">dominik.graf2001@gmail.com </a></p>
+        <h4 data-aos="fade-left" data-aos-duration="1000"> Contact me.</h4>
+        <p data-aos="fade-right" data-aos-duration="1000">Get in touch via the from below, or emailing <a class="link-animation" href=" mailto:dominik.graf2001@gmail.com">dominik.graf2001@gmail.com </a></p>
         <div class="contact-form">
             <form (ngSubmit)="submitForm(contactForm)" #contactForm="ngForm" method="post">
-                <div class="inputarea">
+                <div data-aos="fade-left" data-aos-duration="1000" class="inputarea">
 
                     <div>
                         <label for="name ">Name</label>
                     </div>
                     <div>
-                        <input type="text" name="name" required placeholder="Enter your Name" [(ngModel)]="contact.name" #nameInput="ngModel">
+                        <input type="text" name="name" minlength="3" pattern="[A-Za-z]{3}" required placeholder="Enter your Name" [(ngModel)]="contact.name" #nameInput="ngModel">
                     </div>
                     <div style="color: rgb(185, 1, 1);" *ngIf="nameInput.invalid && nameInput.touched">
                         Your Name is required
                     </div>
                 </div>
 
-                <div class="inputarea">
+                <div data-aos="fade-right" data-aos-duration="1000" class="inputarea">
                     <div>
                         <label for="email">Email Adress</label>
                     </div>
@@ -30,7 +30,7 @@
                 </div>
 
 
-                <div class="inputarea">
+                <div data-aos="fade-left" data-aos-duration="1000" class="inputarea">
                     <div>
                         <label for="message">Message</label>
                     </div>
@@ -42,7 +42,7 @@
                         Please write something
                     </div>
                 </div>
-                <div class="btn">
+                <div data-aos="fade-left" class="btn">
                     <button class="btn-class" [disabled]="contactForm.invalid" [class.disabled]="contactForm.invalid" [class.active]="contactForm.valid" type="submit">Send</button>
                 </div>
                 <!--
