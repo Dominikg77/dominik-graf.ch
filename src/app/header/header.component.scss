@@ -8,9 +8,9 @@ header {
     padding-left: 160px;
     /*  padding-right: 65px; */
     img {
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
+        width: 220px;
+        height: 90px;
+        object-fit: contain;
         cursor: pointer;
     }
 }

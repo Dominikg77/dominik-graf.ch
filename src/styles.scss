@@ -6,6 +6,7 @@ body {
     scroll-behavior: smooth;
     overflow-y: auto;
     overflow-x: hidden;
+    max-width: 100%;
     h1 {
         font-size: 64px;
     }
@@ -41,7 +42,7 @@ body {
 @media(max-width:1250px) {
     body {
         h1 {
-            font-size: 34px;
+            font-size: 30px;
         }
         h4 {
             font-size: 34px;

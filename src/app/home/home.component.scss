@@ -26,7 +26,8 @@ $color-green:rgb(0, 255, 182);
     }
     button {
         margin-top: 24px;
-        padding: 24px 100px 24px 100px;
+        height: 80px;
+        width: 350px;
         background-color: transparent;
         border: 2px solid $color-green;
         color: $color-green;
@@ -93,8 +94,8 @@ $color-green:rgb(0, 255, 182);
             height: 350px;
         }
         button {
-            padding: 24px 80px 24px 80px;
-            border-radius: 10px;
+            height: 80px;
+            width: 300px;
         }
     }
 }
@@ -110,8 +111,8 @@ $color-green:rgb(0, 255, 182);
             height: 280px;
         }
         button {
-            padding: 18px 80px 18px 80px;
-            border-radius: 10px;
+            height: 60px;
+            width: 250px;
         }
     }
     img {
@@ -137,8 +138,8 @@ $color-green:rgb(0, 255, 182);
             margin-bottom: 16px;
         }
         button {
-            padding: 18px 120px 18px 120px;
-            border-radius: 10px;
+            height: 60px;
+            width: 300px;
         }
     }
 }
@@ -169,8 +170,8 @@ $color-green:rgb(0, 255, 182);
             height: 240px;
         }
         button {
-            padding: 18px 120px 18px 120px;
-            border-radius: 10px;
+            height: 50px;
+            width: 250px;
         }
     }
     img {

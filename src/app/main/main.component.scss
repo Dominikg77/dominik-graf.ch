@@ -3,18 +3,12 @@
     padding-right: 160px;
 }
 
-@media (max-width: 900px) {
-    .main-container {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+.overflow-hidden {
+    overflow: hidden;
 }
 
 @media (max-width: 900px) {
-    .main-container {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+    .main-container {}
 }
 
 
@@ -70,8 +64,11 @@
     bottom: 2%;
     right: 2%;
     z-index: 1000;
+    display: flex;
 }
 
 #back-top2 span {
     display: block;
 }
+
+@media (max-width: 900px) {}
