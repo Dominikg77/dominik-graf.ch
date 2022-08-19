@@ -17,10 +17,14 @@ $color-red:rgb(128, 0, 0);
     .imprint {
         padding-top: 100px;
         padding-bottom: 25px;
-        padding-left: 25px;
-        padding-right: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
         h1 {
-            font-size: 32px;
+            font-size: 24px;
+            text-align: center;
+        }
+        p {
+            font-size: 14px;
         }
     }
 }

@@ -11,5 +11,14 @@ export class BackTopComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input () arrowRight=true;
+  arrowRight: boolean;
+  
+window(){
+  if (window.scrollY <1000){
+    this.arrowRight= false;
+    console.log(`Hat funktioniert`)
+  }else{
+    this.arrowRight= true;
+  }
+}
 }
