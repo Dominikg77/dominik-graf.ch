@@ -1,52 +1,14 @@
 <!-- NACH OBEN -->
 <div class="overflow-hidden">
-    <div id="back-top2">
-        <a href="#top">
-            <span class="obenkreis">
-  <i class="obenpfeil-1"></i>
-  <i class="obenpfeil-2"></i>
-  </span>
-        </a>
-    </div>
-
-
-
-
-    <script type='text/javascript'>
-        //<![CDATA[
-        $(document).ready(function() {
-
-            // hide #back-top 
-            $("#back-top2").hide();
-
-            // fade in #back-top
-            $(function() {
-                $(window).scroll(function() {
-                    if ($(this).scrollTop() > 200) {
-                        $('#back-top2').fadeIn();
-                    } else {
-                        $('#back-top2').fadeOut();
-                    }
-                });
-
-                // scroll body to 0px 
-                $('#back-top2 a').click(function() {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 500);
-                    return false;
-                });
-            });
-        });
-        //]]>
-    </script>
-
-
+    <app-back-top></app-back-top>
     <div class="main-container">
-        <app-home></app-home>
+        <app-home arrowRight="false"></app-home>
     </div>
-    <app-my-skills></app-my-skills>
-    <app-my-work></app-my-work>
-    <app-about-me></app-about-me>
-    <app-contact-me></app-contact-me>
+
+    <div>
+        <app-my-skills></app-my-skills>
+        <app-my-work></app-my-work>
+        <app-about-me></app-about-me>
+        <app-contact-me></app-contact-me>
+    </div>
 </div>

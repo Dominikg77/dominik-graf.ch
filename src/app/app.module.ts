@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BackTopComponent } from './back-top/back-top.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MyWorkComponent,
     AboutMeComponent,
     ContactMeComponent,
-    MainComponent
+    MainComponent,
+    BackTopComponent
   ],
   imports: [
     BrowserModule,
