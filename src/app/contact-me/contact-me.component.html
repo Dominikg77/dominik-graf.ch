@@ -10,7 +10,7 @@
                         <label for="name ">Name</label>
                     </div>
                     <div>
-                        <input type="text" name="name" minlength="3" pattern="[A-Za-z]{3}" required placeholder="Enter your Name" [(ngModel)]="contact.name" #nameInput="ngModel">
+                        <input type="text" name="name" required placeholder="Enter your Name" [(ngModel)]="contact.name" #nameInput="ngModel">
                     </div>
                     <div style="color: rgb(185, 1, 1);" *ngIf="nameInput.invalid && nameInput.touched">
                         Your Name is required
