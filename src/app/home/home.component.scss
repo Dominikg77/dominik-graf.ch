@@ -1,5 +1,18 @@
 $color-red:rgb(128, 0, 0);
 $color-green:rgb(0, 255, 182);
+.bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 31%;
+    opacity: 0.4;
+    width: 700px;
+    height: 600px;
+    z-index: -1;
+}
+
 .main-container {
     margin-top: -50px;
     height: calc(100vh - 150px);
@@ -18,13 +31,6 @@ $color-green:rgb(0, 255, 182);
         margin-left: -16px;
         color: $color-green;
     }
-    img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 100%;
-        object-position: top;
-    }
     button {
         margin-top: 24px;
         height: 80px;
@@ -39,6 +45,16 @@ $color-green:rgb(0, 255, 182);
             transform: translateY(-10px) translateX(-10px);
             box-shadow: 9px 9px 4px 0px;
         }
+    }
+}
+
+.main-img {
+    img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 100%;
+        object-position: top;
     }
 }
 
@@ -90,14 +106,22 @@ $color-green:rgb(0, 255, 182);
         span {
             padding-left: 3px;
         }
-        img {
-            width: 350px;
-            height: 350px;
-        }
         button {
             height: 80px;
             width: 300px;
         }
+    }
+    .main-img {
+        img {
+            width: 350px;
+            height: 350px;
+        }
+    }
+    .bg {
+        top: 25%;
+        left: 32%;
+        width: 500px;
+        height: 400px;
     }
 }
 
@@ -107,23 +131,22 @@ $color-green:rgb(0, 255, 182);
             padding-left: 8px;
             color: $color-green;
         }
-        img {
-            width: 280px;
-            height: 280px;
-        }
         button {
             height: 60px;
             width: 250px;
         }
     }
-    img {
-        height: 35px;
-        width: 35px;
-        border-radius: 100%;
-        padding: 15px;
-        cursor: pointer;
-        transition: all 105ms ease-in-out;
-        z-index: 2;
+    .main-img {
+        img {
+            width: 280px;
+            height: 280px;
+        }
+    }
+    .bg {
+        top: 35%;
+        left: 32%;
+        width: 400px;
+        height: 300px;
     }
 }
 
@@ -139,6 +162,9 @@ $color-green:rgb(0, 255, 182);
             height: 60px;
             width: 300px;
         }
+    }
+    .bg {
+        display: none;
     }
 }
 
