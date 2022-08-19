@@ -11,12 +11,12 @@ export class BackTopComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  arrowRight: boolean;
+  arrowRight: boolean=true;
   
 window(){
-  if (window.scrollY <1000){
+  if (window.scrollY <100){
     this.arrowRight= false;
-    console.log(`Hat funktioniert`)
+    window.alert("funktion")
   }else{
     this.arrowRight= true;
   }
