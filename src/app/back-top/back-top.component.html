@@ -1,4 +1,4 @@
-<div id="back-top2" *ngIf="arrowRight" (mousedown)="window()">
+<div id="back-top2" class="d-none">
     <a href="#top">
         <span class="obenkreis">
 <i class="obenpfeil-1"></i>
@@ -6,35 +6,3 @@
 </span>
     </a>
 </div>
-
-<!--
-
-<script type = 'text/javascript' >
-    //<![CDATA[
-    $(document).ready(function() {
-
-        // hide #back-top 
-        $("#back-top2").hide();
-
-        // fade in #back-top
-        $(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 200) {
-                    $('#back-top2').fadeIn();
-                } else {
-                    $('#back-top2').fadeOut();
-                }
-            });
-
-            // scroll body to 0px 
-            $('#back-top2 a').click(function() {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 500);
-                return false;
-            });
-        });
-    });
-//]]>
-</script>
--->

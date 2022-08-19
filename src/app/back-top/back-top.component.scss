@@ -50,15 +50,12 @@
     bottom: 2%;
     right: 2%;
     z-index: 1000;
-    display: none;
 }
 
 #back-top2 span {
     display: block;
 }
 
-@media(max-width:875px) {
-    #back-top2 {
-        display: flex;
-    }
+.d-none {
+    display: none;
 }
