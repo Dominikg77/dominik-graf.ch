@@ -1,4 +1,36 @@
 @import 'aos/dist/aos.css';
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #00ffb6 #ffffff;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #800700 #000000;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #800700;
+    border-radius: 5px;
+}
+
 html {
     scroll-behavior: smooth;
 }

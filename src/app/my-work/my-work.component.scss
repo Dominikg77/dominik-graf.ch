@@ -2,6 +2,7 @@ $color-red:#e6405d;
 .heading {
     overflow-x: hidden;
     background-color: black;
+    position: relative;
     h2 {
         margin: 0;
         text-align: center;
@@ -223,4 +224,11 @@ $color-red:#e6405d;
             font-size: 15px;
         }
     }
+}
+
+.mobile-scroll {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 250px;
 }

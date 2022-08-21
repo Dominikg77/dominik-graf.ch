@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Scroll } from '@angular/router';
 
 @Component({
   selector: 'app-back-top',
@@ -17,15 +18,15 @@ idOnTop=false;
 }
 
 addEventListener('scroll', function(){
-let isOnTop=true;
-console.log(scrollY)
-
-if(isOnTop && this.scrollY <= 750){
-  console.log('oben')
-  this.document.getElementById('back-top2')?.classList.add('d-none')
-}else{
-  this.document.getElementById('back-top2')?.classList.remove('d-none')
-  isOnTop = false;
-  console.log('nicht ganz oben')
-}
-});
+  let isOnTop=true;
+  console.log(scrollY)
+  
+  if(isOnTop && this.scrollY <= 750){
+    console.log('oben')
+    this.document.getElementById('back-top2')?.classList.add('d-none')
+  }else{
+    this.document.getElementById('back-top2')?.classList.remove('d-none')
+    isOnTop = false;
+    console.log('nicht ganz oben')
+  }
+  });

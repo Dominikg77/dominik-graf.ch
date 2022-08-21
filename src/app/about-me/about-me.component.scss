@@ -1,5 +1,6 @@
 $color-green:rgb(0, 255, 182);
 .container {
+    position: relative;
     width: 100vw;
     max-width: 100%;
     padding-top: 64px;
@@ -164,4 +165,11 @@ $color-green:rgb(0, 255, 182);
         font-size: 16px;
         letter-spacing: 2px;
     }
+}
+
+.mobile-scroll {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 2210px;
 }
