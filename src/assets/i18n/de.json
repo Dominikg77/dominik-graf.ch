@@ -26,6 +26,7 @@
     "Graf": "Graf",
     "Front End Develop": "Frontend-Entwicklu",
     "r": "g",
+    "e": "n",
     "Contact me": "Kontaktieren sie mich",
     "MY Skills": "Meine Fähigkeiten",
     "Desing Thinking": "Design-Denken",
@@ -33,9 +34,13 @@
     "Test automation": "Testautomatisierung",
     "Database": "Datenbank",
     "My Work": "Meine Projekte",
+    "All": "Alle",
     "API based library to check Pokemons from the famous Nintendo game.": "API-basierte Bibliothek zum Überprüfen von Pokemons aus dem berühmten Nintendo-Spiel.",
+    "Try it out": "Web-app Öffnen",
     "A Jump and Run game based on objectoriented programming with JavaScript.": "Ein Jump-and-Run-Spiel, das auf objektorientierter Programmierung mit JavaScript basiert.",
     "Tasks management system based on Eisenhower s urgent-important-principle.": "Aufgabenmanagementsystem basierend auf dem Dringend-Wichtig-Prinzip von Eisenhower.",
+    "My first big project with javascript.": "Mein erstes grosses Projekt mit Javascript",
     "Angular-based Webpage.": "Angular-basierte Webseite.",
+    "Go to Top": "Nach oben",
     "Angular-based web-app of the popular drinking game.": "Angular-basierte Web-App des beliebten Trinkspiels."
 }

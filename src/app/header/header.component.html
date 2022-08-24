@@ -32,10 +32,12 @@
     <input type="radio" class="openSidebarMenu" id="openSidebarMenu">
     <ul class="sidebarMenuInner">
 
-        <li translate id="home"><a href="#top">HOME</a>
-        </li>
+        <li translate id="home"><a (click)="translate.use('de')">DE</a></li>
+        <li translate id="home"><a (click)="translate.use('en')">EN</a></li>
+        <li translate id="home"><a href="#top">HOME</a></li>
         <li translate> <a href="#skill">SKILL</a></li>
         <li translate> <a href="#work">PORTFOLIO</a></li>
         <li translate><a href="#about">ABOUT</a></li>
+
     </ul>
 </div>
