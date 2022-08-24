@@ -1,7 +1,7 @@
 <div class="contact">
     <div class="contact-heading">
-        <h4 data-aos="fade-left" data-aos-duration="1000"> Contact me.</h4>
-        <p data-aos="fade-right" data-aos-duration="1000">Get in touch via the from below, or emailing <a class="link-animation" href=" mailto:dominik.graf2001@gmail.com">dominik.graf2001@gmail.com </a></p>
+        <h4 data-aos="fade-left" data-aos-duration="1000" translate> Contact me.</h4>
+        <p data-aos="fade-right" data-aos-duration="1000" translate>Get in touch via the from below, or emailing <a class="link-animation" href=" mailto:dominik.graf2001@gmail.com">dominik.graf2001@gmail.com </a></p>
         <div class="contact-form">
             <form (ngSubmit)="submitForm(contactForm)" #contactForm="ngForm" method="post">
                 <div data-aos="fade-left" data-aos-duration="1000" class="inputarea">
@@ -12,7 +12,7 @@
                     <div>
                         <input type="text" name="name" required placeholder="Enter your Name" [(ngModel)]="contact.name" #nameInput="ngModel">
                     </div>
-                    <div style="color: rgb(185, 1, 1);" *ngIf="nameInput.invalid && nameInput.touched">
+                    <div translate style="color: rgb(185, 1, 1);" *ngIf="nameInput.invalid && nameInput.touched">
                         Your Name is required
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                     <div>
                         <input required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="Enter your Email adress" [(ngModel)]="contact.email" #emailInput="ngModel">
                     </div>
-                    <div style="color: rgb(208, 6, 6);" *ngIf="emailInput.invalid && emailInput.touched">
+                    <div translate style="color: rgb(208, 6, 6);" *ngIf="emailInput.invalid && emailInput.touched">
                         Your valid Email is required
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         <textarea required name="message" placeholder="Write your message" [(ngModel)]="contact.message" #messageInput="ngModel"></textarea>
 
                     </div>
-                    <div style="color: rgb(208, 6, 6);" *ngIf="messageInput.invalid && messageInput.touched">
+                    <div translate style="color: rgb(208, 6, 6);" *ngIf="messageInput.invalid && messageInput.touched">
                         Please write something
                     </div>
                 </div>

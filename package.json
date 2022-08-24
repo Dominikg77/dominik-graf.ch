@@ -1,41 +1,47 @@
 {
-  "name": "portfolio",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^14.1.3",
-    "@angular/cdk": "^14.1.2",
-    "@angular/common": "^14.1.3",
-    "@angular/compiler": "^14.1.3",
-    "@angular/core": "^14.1.3",
-    "@angular/forms": "^14.1.3",
-    "@angular/material": "^14.1.2",
-    "@angular/platform-browser": "^14.1.3",
-    "@angular/platform-browser-dynamic": "^14.1.3",
-    "@angular/router": "^14.1.3",
-    "aos": "^2.3.4",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^14.1.3",
-    "@angular/cli": "^14.1.3",
-    "@angular/compiler-cli": "^14.1.3",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.2.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
-  }
+    "name": "portfolio",
+    "version": "0.0.0",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "watch": "ng build --watch --configuration development",
+        "test": "ng test",
+        "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json ./src/assets/i18n/de.json --key-as-default-value --replace --format json",
+        "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/{en,da,de,fi,nb,nl,sv}.json --clean --format json"
+
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/animations": "^14.1.3",
+        "@angular/cdk": "^14.1.2",
+        "@angular/common": "^14.1.3",
+        "@angular/compiler": "^14.1.3",
+        "@angular/core": "^14.1.3",
+        "@angular/forms": "^14.1.3",
+        "@angular/material": "^14.1.2",
+        "@angular/platform-browser": "^14.1.3",
+        "@angular/platform-browser-dynamic": "^14.1.3",
+        "@angular/router": "^14.1.3",
+        "@ngx-translate/core": "^14.0.0",
+        "@ngx-translate/http-loader": "^7.0.0",
+        "aos": "^2.3.4",
+        "rxjs": "~7.5.0",
+        "tslib": "^2.3.0",
+        "zone.js": "~0.11.4"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "^14.1.3",
+        "@angular/cli": "^14.1.3",
+        "@angular/compiler-cli": "^14.1.3",
+        "@bartholomej/ngx-translate-extract": "^8.0.2",
+        "@types/jasmine": "~4.0.0",
+        "jasmine-core": "~4.2.0",
+        "karma": "~6.4.0",
+        "karma-chrome-launcher": "~3.1.0",
+        "karma-coverage": "~2.2.0",
+        "karma-jasmine": "~5.1.0",
+        "karma-jasmine-html-reporter": "~2.0.0",
+        "typescript": "~4.7.2"
+    }
 }

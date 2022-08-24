@@ -4,10 +4,13 @@
 
     </div>
     <div data-aos="flip-down" data-aos-duration="1200" class="links m-right">
-        <a href="#home">HOME</a>
-        <a href="#skill">SKILL</a>
-        <a href="#work">PORTFOLIO</a>
-        <a href="#about">ABOUT</a>
+        <a href="#home" translate>HOME</a>
+        <a href="#skill" translate>SKILL</a>
+        <a href="#work" translate>PORTFOLIO</a>
+        <a href="#about" translate>ABOUT</a>
+        <a (click)="translate.use('de')">DE</a>
+        <a (click)="translate.use('en')">EN</a>
+
     </div>
 </header>
 
@@ -29,10 +32,10 @@
     <input type="radio" class="openSidebarMenu" id="openSidebarMenu">
     <ul class="sidebarMenuInner">
 
-        <li id="home"><a href="#top">HOME</a>
+        <li translate id="home"><a href="#top">HOME</a>
         </li>
-        <li> <a href="#skill">SKILL</a></li>
-        <li> <a href="#work">PORTFOLIO</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li translate> <a href="#skill">SKILL</a></li>
+        <li translate> <a href="#work">PORTFOLIO</a></li>
+        <li translate><a href="#about">ABOUT</a></li>
     </ul>
 </div>
