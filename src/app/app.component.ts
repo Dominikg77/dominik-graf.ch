@@ -10,8 +10,8 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
 
-  constructor(translate: TranslateService){
-    
+  constructor(public translate: TranslateService){
+
   }
 
   ngOnInit(){
