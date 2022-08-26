@@ -8,8 +8,8 @@
         <a href="#skill" translate>SKILL</a>
         <a href="#work" translate>PORTFOLIO</a>
         <a href="#about" translate>ABOUT</a>
-        <a (click)="translate.use('de')">DE</a>
-        <a (click)="translate.use('en')">EN</a>
+        <img (click)="translate.use('de')" src="assets/img/de.png">
+        <img (click)="translate.use('en')" src="assets/img/en.png">
 
     </div>
 </header>
@@ -32,12 +32,15 @@
     <input type="radio" class="openSidebarMenu" id="openSidebarMenu">
     <ul class="sidebarMenuInner">
 
-        <li translate id="home"><a (click)="translate.use('de')">DE</a></li>
-        <li translate id="home"><a (click)="translate.use('en')">EN</a></li>
+
         <li translate id="home"><a href="#top">HOME</a></li>
         <li translate> <a href="#skill">SKILL</a></li>
         <li translate> <a href="#work">PORTFOLIO</a></li>
         <li translate><a href="#about">ABOUT</a></li>
+        <div class="img-translate-mobile">
+            <li><img (click)="translate.use('de')" src="assets/img/de.png"></li>
+            <li><img (click)="translate.use('en')" src="assets/img/en.png"></li>
+        </div>
 
     </ul>
 </div>

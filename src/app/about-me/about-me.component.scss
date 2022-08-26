@@ -26,6 +26,11 @@ $color-green:rgb(0, 255, 182);
         height: 200px;
         object-fit: cover;
         border-radius: 100%;
+        filter: grayscale(0) blur(0);
+        transition: all 500ms ease-in-out;
+        &:hover {
+            filter: grayscale(100%) blur(3px);
+        }
     }
 }
 
