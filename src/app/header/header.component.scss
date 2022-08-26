@@ -75,7 +75,11 @@ img {
     display: none !important;
 }
 
+
+/*Möglichkeit postion fixed*/
+
 .header {
+    position: fixed;
     display: block;
     display: flex;
     align-items: center;
@@ -83,7 +87,6 @@ img {
     margin: 0 auto;
     box-shadow: none;
     background-color: #1a1a1a;
-    position: fixed;
     height: 80px!important;
     overflow: hidden;
     z-index: 10;
@@ -117,7 +120,7 @@ img {
 .sidebarMenuInner {
     margin: 0;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -129,7 +132,7 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    padding: 100px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
 }
 
 .sidebarMenuInner li span {
@@ -246,8 +249,8 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 .img-translate-mobile {
     display: flex;
     img {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: -8px;
+        margin-right: -8px;
         width: 24px;
         height: 24px;
     }

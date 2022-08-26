@@ -11,5 +11,5 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input () arrowRight:boolean=false;
+  
 }
