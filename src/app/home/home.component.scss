@@ -175,8 +175,11 @@ $color-green:rgb(0, 255, 182);
 
 @media(max-width:875px) {
     .main-container {
-        margin-top: 0px;
-        padding-top: 20px;
+        /* Version 2
+     margin-top: 0px;
+     padding-top: 20px;
+        */
+        margin-top: -50px;
         padding-bottom: 70px;
         text-align: start;
         height: calc(100vh - 80px);
