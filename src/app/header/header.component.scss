@@ -6,7 +6,6 @@ header {
     padding-top: 20px;
     padding-right: 160px;
     padding-left: 160px;
-    /*  padding-right: 65px; */
 }
 
 .m-left {
@@ -75,20 +74,20 @@ img {
     display: none !important;
 }
 
-
-/*Möglichkeit postion fixed*/
-
 .header {
-    /*
+    /* version 2
     position: fixed;
+    margin-top: 0px;
+       background-color: grey;
+       margin: 0 auto;
     */
+    margin-top: -70px;
     display: block;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 0 auto;
     box-shadow: none;
-    background-color: #1a1a1a;
+    background-color: transparent;
     height: 80px!important;
     overflow: hidden;
     z-index: 10;
