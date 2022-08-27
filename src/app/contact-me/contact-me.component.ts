@@ -20,7 +20,7 @@ export class ContactMeComponent implements OnInit {
   post = {
     // Where to send the post request Ex. http://my-domain/sendMail.php
     //or https://my-domain/sendMail.php if you have SSL-Certificate Active
-    endPoint: 'https://dominik-graf.developerakademie.net/portfolio/mail.php',
+    endPoint: 'https://dominik-graf.ch/mail.php',
 
 
     body: (payload: any) => JSON.stringify(payload),

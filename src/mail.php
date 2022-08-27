@@ -19,7 +19,7 @@ switch($_SERVER['REQUEST_METHOD']){
         
 //E-mail angeben//
 
-        $recipient = 'dominik.graf2001@gmail.com';
+        $recipient = 'info@dominik-graf.ch';
         $subject = "new message from: $name";
         $headers = "$email";
 
