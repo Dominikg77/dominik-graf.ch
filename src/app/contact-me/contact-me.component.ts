@@ -2,26 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-
 @Component({
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.scss']
+  styleUrls: ['./contact-me.component.scss'],
 })
-
-
 export class ContactMeComponent implements OnInit {
   contact = {
     name: '',
     email: '',
-    message: ''
+    message: '',
   };
 
   post = {
     // Where to send the post request Ex. http://my-domain/sendMail.php
     //or https://my-domain/sendMail.php if you have SSL-Certificate Active
     endPoint: 'https://dominik-graf.ch/mail.php',
-
 
     body: (payload: any) => JSON.stringify(payload),
     // How to send, notice Content-Type and responseType
@@ -33,12 +29,9 @@ export class ContactMeComponent implements OnInit {
     },
   };
 
- 
+  constructor(private http: HttpClient, private _snackBar: MatSnackBar) {}
 
-  constructor(private http: HttpClient, private _snackBar: MatSnackBar) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   submitForm(ngForm: any) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
@@ -49,7 +42,6 @@ export class ContactMeComponent implements OnInit {
           complete: () => this.sentSnackBar(),
         });
       ngForm.reset();
-
     }
   }
   sentSnackBar() {
@@ -59,7 +51,9 @@ export class ContactMeComponent implements OnInit {
     }, 5000);
   }
   errorSnackBar() {
-    this._snackBar.open('Email could not be sent. Please contact me direct on hello@navjot-singh.de', 'Close');
-
+    this._snackBar.open(
+      'Email could not be sent. Please contact me direct on hello@navjot-singh.de',
+      'Close'
+    );
   }
 }

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,10 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  constructor(public translate: TranslateService) {}
 
-  constructor(public translate: TranslateService){
-
-  }
-
-  ngOnInit(){
+  ngOnInit() {
     AOS.init();
-   }
-   @Input () arrowRight=true;
   }
+  @Input() arrowRight = true;
+}

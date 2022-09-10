@@ -3,14 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-my-work',
   templateUrl: './my-work.component.html',
-  styleUrls: ['./my-work.component.scss']
+  styleUrls: ['./my-work.component.scss'],
 })
 export class MyWorkComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   all = true;
   angular = true;
   java = true;
@@ -22,7 +20,7 @@ export class MyWorkComponent implements OnInit {
   game = false;
   join = false;
   ringoffire = false;
-  website = false
+  website = false;
   weather = false;
   allProjects() {
     this.all = true;
@@ -30,7 +28,6 @@ export class MyWorkComponent implements OnInit {
     this.angular = true;
     this.jsProjects = false;
     this.angProjects = false;
-
   }
   angularProjects() {
     this.angular = true;
@@ -38,17 +35,13 @@ export class MyWorkComponent implements OnInit {
     this.all = false;
     this.java = false;
     this.jsProjects = false;
-
-
   }
 
   javaProjects() {
-    this.java = true
-    this.jsProjects = true
+    this.java = true;
+    this.jsProjects = true;
     this.all = false;
     this.angular = false;
     this.angProjects = false;
-
   }
-
 }
