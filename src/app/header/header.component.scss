@@ -13,8 +13,11 @@ header {
         width: 220px;
         height: 90px;
         object-fit: contain;
-        cursor: pointer;
         align-items: center;
+        cursor: default;
+    }
+    a {
+        cursor: default;
     }
 }
 
@@ -23,6 +26,8 @@ img {
     height: 24px;
     justify-content: flex-start;
     margin-left: 20px;
+    margin-bottom: -2px;
+    cursor: pointer;
     &:hover {
         transition: all 225ms ease-in-out;
         opacity: 0.7;

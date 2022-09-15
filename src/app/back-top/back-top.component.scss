@@ -1,5 +1,4 @@
-/*Test*/
-
+$color-green:rgb(0, 255, 182);
 .obenkreis {
     width: 40px;
     height: 40px;
@@ -20,7 +19,7 @@
 
 .obenpfeil-1,
 .obenpfeil-2 {
-    border: solid #fff;
+    border: solid $color-green;
     /* Farbe Pfeile */
     border-width: 0 3px 3px 0;
     display: inline-block;

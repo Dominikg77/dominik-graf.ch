@@ -1,4 +1,4 @@
-$color-red:#e6405d;
+$color-red:rgb(128, 0, 0);
 .heading {
     overflow-x: hidden;
     background-color: black;
@@ -219,7 +219,7 @@ $color-red:#e6405d;
 @media (max-width: 650px) {
     .myWork-container {
         button {
-            width: 85px;
+            width: 90px;
             height: 50px;
             font-size: 15px;
         }

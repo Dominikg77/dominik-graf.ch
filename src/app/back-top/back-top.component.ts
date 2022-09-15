@@ -18,14 +18,11 @@ export class BackTopComponent implements OnInit {
 
 addEventListener('scroll', function () {
   let isOnTop = true;
-  console.log(scrollY);
 
   if (isOnTop && this.scrollY <= 750) {
-    console.log('oben');
     this.document.getElementById('back-top2')?.classList.add('d-none');
   } else {
     this.document.getElementById('back-top2')?.classList.remove('d-none');
     isOnTop = false;
-    console.log('nicht ganz oben');
   }
 });

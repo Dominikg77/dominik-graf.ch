@@ -39,6 +39,7 @@ $color-green:rgb(0, 255, 182);
         border: 2px solid $color-green;
         color: $color-green;
         border-radius: 10px;
+        cursor: pointer;
         transition: all 255ms ease-in-out;
         &:hover {
             transition: all 255ms ease-in-out;
