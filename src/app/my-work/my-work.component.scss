@@ -1,4 +1,5 @@
 $color-red:rgb(128, 0, 0);
+$color-green:rgb(0, 255, 182);
 .heading {
     overflow-x: hidden;
     background-color: black;
@@ -61,12 +62,14 @@ $color-red:rgb(128, 0, 0);
 .project-images {
     margin-left: 8px;
     margin-right: 8px;
-    transition: all 125ms ease-in-out;
     position: relative;
     cursor: pointer;
     height: 300px;
     width: 400px;
     margin-bottom: 50px;
+    transition: all 125ms ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 2px transparent;
     img {
         height: 300px;
         width: 400px;
@@ -74,8 +77,10 @@ $color-red:rgb(128, 0, 0);
         border-radius: 10px;
     }
     &:hover {
-        box-shadow: 0px 0px 12px 1px $color-red;
+        box-shadow: 0px 0px 12px 2px $color-green;
+        border-radius: 10px;
         .project-details {
+            transition: all 500ms ease-in-out;
             opacity: 1;
         }
     }
@@ -83,7 +88,7 @@ $color-red:rgb(128, 0, 0);
 
 .project-details {
     opacity: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     color: black;
     height: 300px;
     width: 380px;
