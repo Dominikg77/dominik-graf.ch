@@ -37,15 +37,20 @@ html {
     height: -webkit-fill-available;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     height: -webkit-fill-available;
     height: 100vh;
     margin: 0px;
     background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-y: auto;
     overflow-x: hidden;
     max-width: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     h1 {
         font-size: 64px;
     }
@@ -114,14 +119,4 @@ body {
             font-size: 16px;
         }
     }
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
